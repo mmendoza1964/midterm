@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name"><br>
+    <br>
+
+    <p>Results: </p><br>
+    <h4>Thank you for taking the survey, {{ @name }}!</h4>
+
+    <p><b>Your Answers:</b></p>
+    <repeat group="{{ @chosenChoices }}" value="{{ @chosenChoice }}">
+      <span>{{ @chosenChoice}}, </span>
+    </repeat>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
