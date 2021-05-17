@@ -34,8 +34,6 @@ $f3->route('GET|POST /survey', function ($f3) {
 
         //check to see if choices is empty
 
-
-
         header('location: summary');
     }
 
@@ -45,6 +43,7 @@ $f3->route('GET|POST /survey', function ($f3) {
 });
 
 $f3->route('GET|POST /summary', function ($f3) {
+    echo "var_dump($_SESSION)";
 
     //Display the order1 page
     $view = new Template();

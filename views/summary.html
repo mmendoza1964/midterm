@@ -13,8 +13,8 @@
     <h4>Thank you for taking the survey, {{ @SESSION.name }}!</h4>
 
     <p><b>Your Answers:</b></p>
-    <repeat group="{{ @chosenChoices }}" value="{{ @chosenChoice }}">
-      <span>{{ @chosenChoice}}, </span>
+    <repeat group="{{ @SESSION.choices }}" value="{{ @choice }}">
+      <span>{{ @choice}}, </span>
     </repeat>
     <br>
 
