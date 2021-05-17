@@ -12,12 +12,10 @@
 
     <p>Check all that apply: </p><br>
 
-    <input type="checkbox" name="choices[]" value="easy">
-    <label>This midterm is easy</label><br>
-    <input type="checkbox" name="choices[]" value="like">
-    <label>I like midterms</label><br>
-    <input type="checkbox" name="choices[]" value="monday">
-    <label>Today is Monday</label><br>
+    <repeat group="{{ @choices }}" value="{{ @choice }}">
+      <label><input type="checkbox" name="choices[]" value="{{ @choice }}"
+      > {{ ucfirst(@choice) }}</label><br>
+    </repeat>
     <br>
 
     <input type="submit" value="Submit">

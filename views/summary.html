@@ -10,8 +10,7 @@
     <input type="text" id="name" name="name"><br>
     <br>
 
-    <p>Results: </p><br>
-    <h4>Thank you for taking the survey, {{ @name }}!</h4>
+    <h4>Thank you for taking the survey, {{ @SESSION.name }}!</h4>
 
     <p><b>Your Answers:</b></p>
     <repeat group="{{ @chosenChoices }}" value="{{ @chosenChoice }}">
