@@ -1,0 +1,16 @@
+{
+  "name": "http://mmendoza-rabara.greenriverdev.com/328/wk4/diner",
+  "authors": [
+    {
+      "name": "Mark Mendoza",
+      "email": "mmendoza-rabara@mail.greenriver.edu"
+    },
+    {
+      "name": "Zaharah",
+      "email": "hermail@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree": "dev-master"
+  }
+}
