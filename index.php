@@ -29,8 +29,9 @@ $f3->route('GET|POST /survey', function ($f3) {
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
+
         $_SESSION['name'] = $_POST['name']; //save name input to session
-        $_SESSION['choices'] = $_POST['choices[]']; //save chosenChoices to session
+        $_SESSION['choices'] = $_POST['choices']; //save chosenChoices to session
 
         //check to see if choices is empty
 
@@ -43,7 +44,7 @@ $f3->route('GET|POST /survey', function ($f3) {
 });
 
 $f3->route('GET|POST /summary', function ($f3) {
-    echo "var_dump($_SESSION)";
+    var_dump($_SESSION);
 
     //Display the order1 page
     $view = new Template();

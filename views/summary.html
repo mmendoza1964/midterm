@@ -13,12 +13,12 @@
     <h4>Thank you for taking the survey, {{ @SESSION.name }}!</h4>
 
     <p><b>Your Answers:</b></p>
+    <ul>
     <repeat group="{{ @SESSION.choices }}" value="{{ @choice }}">
-      <span>{{ @choice}}, </span>
+      <li>{{ @choice}} </li>
     </repeat>
-    <br>
-
-    <input type="submit" value="Submit">
+    </ul>
+    <br><br>
   </form>
 </body>
 </html>
